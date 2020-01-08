@@ -28,12 +28,78 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btn_save = new System.Windows.Forms.Button();
+            this.input_prenom = new System.Windows.Forms.TextBox();
+            this.input_nom = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(27, 87);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(49, 13);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Prenom :";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(41, 49);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Nom :";
+            // 
+            // btn_save
+            // 
+            this.btn_save.Location = new System.Drawing.Point(82, 125);
+            this.btn_save.Name = "btn_save";
+            this.btn_save.Size = new System.Drawing.Size(75, 23);
+            this.btn_save.TabIndex = 7;
+            this.btn_save.Text = "save";
+            this.btn_save.UseVisualStyleBackColor = true;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
+            // 
+            // input_prenom
+            // 
+            this.input_prenom.Location = new System.Drawing.Point(82, 84);
+            this.input_prenom.Name = "input_prenom";
+            this.input_prenom.Size = new System.Drawing.Size(100, 20);
+            this.input_prenom.TabIndex = 6;
+            // 
+            // input_nom
+            // 
+            this.input_nom.Location = new System.Drawing.Point(82, 46);
+            this.input_nom.Name = "input_nom";
+            this.input_nom.Size = new System.Drawing.Size(100, 20);
+            this.input_nom.TabIndex = 5;
+            // 
+            // ClientEdit
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(238, 189);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btn_save);
+            this.Controls.Add(this.input_prenom);
+            this.Controls.Add(this.input_nom);
+            this.Name = "ClientEdit";
             this.Text = "ClientEdit";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_save;
+        private System.Windows.Forms.TextBox input_prenom;
+        private System.Windows.Forms.TextBox input_nom;
     }
 }

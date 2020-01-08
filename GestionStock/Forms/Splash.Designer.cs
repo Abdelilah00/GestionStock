@@ -1,6 +1,6 @@
 ﻿namespace GestionStock
 {
-    partial class Form1
+    partial class Splash
     {
         /// <summary>
         /// Required designer variable.
@@ -65,14 +65,14 @@
             this.toolStripTextBox3.Size = new System.Drawing.Size(49, 22);
             this.toolStripTextBox3.Text = "Product";
             // 
-            // Form1
+            // Splash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(816, 472);
             this.Controls.Add(this.toolStrip1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Splash";
+            this.Text = "Splash";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
