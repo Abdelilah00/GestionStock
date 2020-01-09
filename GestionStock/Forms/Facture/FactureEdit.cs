@@ -15,9 +15,7 @@ namespace GestionStock.Forms.Facture
         private void btn_save_Click(object sender, System.EventArgs e)
         {
             DatabaseContext context = new DatabaseContext();
-            var ProductId = Convert.ToInt32(cb_prod.SelectedValue);
-            var ClientId = Convert.ToInt32(cb_client.SelectedValue);
-
+            MessageBox.Show(cb_prod.SelectedValue.ToString());
             var facture = new Models.Facture
             {
                 Reference = input_ref.Text,
