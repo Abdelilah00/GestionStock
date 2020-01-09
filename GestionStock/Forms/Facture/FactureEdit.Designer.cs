@@ -36,6 +36,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.input_qte = new System.Windows.Forms.TextBox();
             this.cb_prod = new System.Windows.Forms.ComboBox();
+            this.cb_client = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label2
@@ -58,7 +60,7 @@
             // 
             // btn_save
             // 
-            this.btn_save.Location = new System.Drawing.Point(75, 141);
+            this.btn_save.Location = new System.Drawing.Point(75, 150);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(75, 23);
             this.btn_save.TabIndex = 7;
@@ -91,17 +93,40 @@
             // 
             // cb_prod
             // 
+            this.cb_prod.DisplayMember = "Libelle";
             this.cb_prod.FormattingEnabled = true;
             this.cb_prod.Location = new System.Drawing.Point(90, 96);
             this.cb_prod.Name = "cb_prod";
             this.cb_prod.Size = new System.Drawing.Size(121, 21);
             this.cb_prod.TabIndex = 12;
+            this.cb_prod.ValueMember = "Id";
+            // 
+            // cb_client
+            // 
+            this.cb_client.DisplayMember = "NomComplet";
+            this.cb_client.FormattingEnabled = true;
+            this.cb_client.Location = new System.Drawing.Point(90, 123);
+            this.cb_client.Name = "cb_client";
+            this.cb_client.Size = new System.Drawing.Size(121, 21);
+            this.cb_client.TabIndex = 14;
+            this.cb_client.ValueMember = "Id";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 123);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(39, 13);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Client :";
             // 
             // FactureEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(230, 205);
+            this.Controls.Add(this.cb_client);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.cb_prod);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.input_qte);
@@ -127,5 +152,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox input_qte;
         private System.Windows.Forms.ComboBox cb_prod;
+        private System.Windows.Forms.ComboBox cb_client;
+        private System.Windows.Forms.Label label3;
     }
 }

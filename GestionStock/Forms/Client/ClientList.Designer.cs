@@ -49,6 +49,7 @@
             this.btn_add.TabIndex = 1;
             this.btn_add.Text = "Add";
             this.btn_add.UseVisualStyleBackColor = true;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
             // ClientList
             // 
@@ -59,6 +60,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "ClientList";
             this.Text = "ClientList";
+            this.Load += new System.EventHandler(this.ClientList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

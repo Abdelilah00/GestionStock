@@ -16,5 +16,17 @@ namespace GestionStock.Forms
         {
             InitializeComponent();
         }
+
+        private void ProductList_Load(object sender, EventArgs e)
+        {
+            DatabaseContext context = new DatabaseContext();
+            dataGridView1.DataSource = context.Products.ToList();
+        }
+
+        private void btn_add_Click(object sender, EventArgs e)
+        {
+            var form = new ProductEdit();
+            form.Show();
+        }
     }
 }

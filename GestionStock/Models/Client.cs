@@ -24,5 +24,7 @@ namespace GestionStock.Models
 
         [Column(Name = "Designation", DbType = "VARCHAR")]
         public string PreNom { get; set; }
+
+        public string NomComplet => Nom + " " + PreNom;
     }
 }

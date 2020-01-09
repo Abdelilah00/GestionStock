@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GestionStock.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,19 @@ namespace GestionStock.Forms
         public ClientList()
         {
             InitializeComponent();
+        }
+
+        private void ClientList_Load(object sender, EventArgs e)
+        {
+            DatabaseContext context = new DatabaseContext();
+            dataGridView1.DataSource = context.Clients.ToList();
+        }
+
+        private void btn_add_Click(object sender, EventArgs e)
+        {
+
+            var form = new ClientEdit();
+            form.Show();
         }
     }
 }

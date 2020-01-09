@@ -41,6 +41,7 @@
             this.btn_add.TabIndex = 3;
             this.btn_add.Text = "Add";
             this.btn_add.UseVisualStyleBackColor = true;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
             // dataGridView1
             // 
@@ -59,6 +60,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "ProductList";
             this.Text = "ProductList";
+            this.Load += new System.EventHandler(this.ProductList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

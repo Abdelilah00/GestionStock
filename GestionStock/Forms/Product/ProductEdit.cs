@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GestionStock.Forms
 {
-    public partial class ProducEdit : Form
+    public partial class ProductEdit : Form
     {
-        public ProducEdit()
+        public ProductEdit()
         {
             InitializeComponent();
         }

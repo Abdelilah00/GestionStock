@@ -1,6 +1,6 @@
 ﻿namespace GestionStock.Forms
 {
-    partial class ProducEdit
+    partial class ProductEdit
     {
         /// <summary>
         /// Required designer variable.

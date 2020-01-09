@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using SQLiteNetExtensions.Attributes;
+using System.ComponentModel.DataAnnotations;
 using System.Data.Linq.Mapping;
 
 namespace GestionStock.Models
@@ -15,5 +16,7 @@ namespace GestionStock.Models
 
         [Column(Name = "qte", DbType = "INTEGER")]
         public int Qte { get; set; }
+
+
     }
 }

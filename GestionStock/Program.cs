@@ -1,4 +1,5 @@
-﻿using GestionStock.Models;
+﻿using GestionStock.Forms;
+using GestionStock.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
