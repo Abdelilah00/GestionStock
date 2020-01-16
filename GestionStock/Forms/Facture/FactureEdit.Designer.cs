@@ -99,7 +99,7 @@
             this.cb_prod.Name = "cb_prod";
             this.cb_prod.Size = new System.Drawing.Size(121, 21);
             this.cb_prod.TabIndex = 12;
-            this.cb_prod.ValueMember = "Id";
+            this.cb_prod.ValueMember = "libelle";
             // 
             // cb_client
             // 

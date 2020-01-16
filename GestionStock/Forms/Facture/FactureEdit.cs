@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GestionStock.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
@@ -15,13 +16,12 @@ namespace GestionStock.Forms.Facture
         private void btn_save_Click(object sender, System.EventArgs e)
         {
             DatabaseContext context = new DatabaseContext();
-            MessageBox.Show(cb_prod.SelectedValue.ToString());
             var facture = new Models.Facture
             {
                 Reference = input_ref.Text,
                 Qte = Convert.ToInt32(input_qte.Text),
-                ProductId = Convert.ToInt32(cb_prod.ValueMember),
-                ClientId = Convert.ToInt32(cb_client.ValueMember),
+                ProductId = Convert.ToInt32((cb_prod.SelectedItem as Product).Id.ToString()),
+                ClientId = Convert.ToInt32((cb_client.SelectedItem as Client).Id.ToString()),
             };
             context.Factures.Add(facture);
             context.SaveChanges();
@@ -34,8 +34,7 @@ namespace GestionStock.Forms.Facture
             foreach (var item in items)
             {
                 cb_prod.Items.Add(item);
-            } 
-            
+            }
             var items1 = context.Clients.ToList();
             foreach (var item in items1)
             {
