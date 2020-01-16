@@ -18,10 +18,10 @@ namespace GestionStock.Forms.Facture
             DatabaseContext context = new DatabaseContext();
             var facture = new Models.Facture
             {
-                Reference = input_ref.Text,
-                Qte = Convert.ToInt32(input_qte.Text),
-                ProductId = Convert.ToInt32((cb_prod.SelectedItem as Product).Id.ToString()),
-                ClientId = Convert.ToInt32((cb_client.SelectedItem as Client).Id.ToString()),
+             
+                Qte = Convert.ToInt32(numericUpDown1.Text),
+                ProductId = (cb_prod.SelectedItem as Product).Id,
+                ClientId = (cb_client.SelectedItem as Client).Id,
             };
             context.Factures.Add(facture);
             context.SaveChanges();

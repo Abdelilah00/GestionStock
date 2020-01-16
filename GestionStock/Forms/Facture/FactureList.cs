@@ -21,7 +21,8 @@ namespace GestionStock.Forms
         private void FactureList_Load(object sender, EventArgs e)
         {
             DatabaseContext context = new DatabaseContext();
-            dataGridView1.DataSource = context.Factures.ToList();
+            var x= context.Factures.Include(f=>f.));
+            dataGridView1.DataSource = x;
         }
 
         private void btn_add_Click(object sender, EventArgs e)

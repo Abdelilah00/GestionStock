@@ -12,21 +12,15 @@ namespace GestionStock.Models
         [Key]
         public int Id { get; set; }
 
-        [Column(Name = "reference", DbType = "VARCHAR")]
-        public string Reference { get; set; }
+       
 
-        [Column(Name = "qte", DbType = "INTEGER")]
         public int Qte { get; set; }
 
-        [ForeignKey(typeof(Product))]
         public int ProductId { get; set; }
-        [ForeignKey(typeof(Client))]
         public int ClientId { get; set; }
 
-        [OneToOne]
-        public Client Client { get; set; }
-        [OneToOne]
-        public Product Product { get; set; }
+        public virtual Client Client { get; set; }
+        public virtual Product Product { get; set; }
     }
 
 }

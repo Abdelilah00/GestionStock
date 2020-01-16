@@ -29,34 +29,24 @@
         private void InitializeComponent()
         {
             this.label2 = new System.Windows.Forms.Label();
-            this.gerg = new System.Windows.Forms.Label();
             this.btn_save = new System.Windows.Forms.Button();
-            this.input_ref = new System.Windows.Forms.TextBox();
             this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
             this.label1 = new System.Windows.Forms.Label();
-            this.input_qte = new System.Windows.Forms.TextBox();
             this.cb_prod = new System.Windows.Forms.ComboBox();
             this.cb_client = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 96);
+            this.label2.Location = new System.Drawing.Point(12, 47);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 13);
             this.label2.TabIndex = 9;
             this.label2.Text = "Product :";
-            // 
-            // gerg
-            // 
-            this.gerg.AutoSize = true;
-            this.gerg.Location = new System.Drawing.Point(12, 28);
-            this.gerg.Name = "gerg";
-            this.gerg.Size = new System.Drawing.Size(57, 13);
-            this.gerg.TabIndex = 8;
-            this.gerg.Text = "Reference";
             // 
             // btn_save
             // 
@@ -68,34 +58,20 @@
             this.btn_save.UseVisualStyleBackColor = true;
             this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
-            // input_ref
-            // 
-            this.input_ref.Location = new System.Drawing.Point(90, 21);
-            this.input_ref.Name = "input_ref";
-            this.input_ref.Size = new System.Drawing.Size(100, 20);
-            this.input_ref.TabIndex = 5;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 66);
+            this.label1.Location = new System.Drawing.Point(12, 104);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 13);
             this.label1.TabIndex = 11;
             this.label1.Text = "Qte Vendu:";
             // 
-            // input_qte
-            // 
-            this.input_qte.Location = new System.Drawing.Point(90, 47);
-            this.input_qte.Name = "input_qte";
-            this.input_qte.Size = new System.Drawing.Size(100, 20);
-            this.input_qte.TabIndex = 10;
-            // 
             // cb_prod
             // 
             this.cb_prod.DisplayMember = "Libelle";
             this.cb_prod.FormattingEnabled = true;
-            this.cb_prod.Location = new System.Drawing.Point(90, 96);
+            this.cb_prod.Location = new System.Drawing.Point(90, 47);
             this.cb_prod.Name = "cb_prod";
             this.cb_prod.Size = new System.Drawing.Size(121, 21);
             this.cb_prod.TabIndex = 12;
@@ -105,7 +81,7 @@
             // 
             this.cb_client.DisplayMember = "NomComplet";
             this.cb_client.FormattingEnabled = true;
-            this.cb_client.Location = new System.Drawing.Point(90, 123);
+            this.cb_client.Location = new System.Drawing.Point(90, 74);
             this.cb_client.Name = "cb_client";
             this.cb_client.Size = new System.Drawing.Size(121, 21);
             this.cb_client.TabIndex = 14;
@@ -114,29 +90,35 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 123);
+            this.label3.Location = new System.Drawing.Point(12, 74);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(39, 13);
+            this.label3.Size = new System.Drawing.Size(62, 13);
             this.label3.TabIndex = 13;
-            this.label3.Text = "Client :";
+            this.label3.Text = "Demandeur";
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(90, 102);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDown1.TabIndex = 15;
             // 
             // FactureEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(230, 205);
+            this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.cb_client);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cb_prod);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.input_qte);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.gerg);
             this.Controls.Add(this.btn_save);
-            this.Controls.Add(this.input_ref);
             this.Name = "FactureEdit";
-            this.Text = "FactureEdit";
+            this.Text = "Demande";
             this.Load += new System.EventHandler(this.FactureEdit_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -145,14 +127,12 @@
         #endregion
 
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label gerg;
         private System.Windows.Forms.Button btn_save;
-        private System.Windows.Forms.TextBox input_ref;
         private System.DirectoryServices.DirectoryEntry directoryEntry1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox input_qte;
         private System.Windows.Forms.ComboBox cb_prod;
         private System.Windows.Forms.ComboBox cb_client;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
     }
 }

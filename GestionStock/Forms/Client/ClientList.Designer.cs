@@ -40,6 +40,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(776, 366);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // btn_add
             // 
@@ -47,7 +48,7 @@
             this.btn_add.Name = "btn_add";
             this.btn_add.Size = new System.Drawing.Size(75, 23);
             this.btn_add.TabIndex = 1;
-            this.btn_add.Text = "Add";
+            this.btn_add.Text = "Ajouter";
             this.btn_add.UseVisualStyleBackColor = true;
             this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
@@ -59,7 +60,7 @@
             this.Controls.Add(this.btn_add);
             this.Controls.Add(this.dataGridView1);
             this.Name = "ClientList";
-            this.Text = "ClientList";
+            this.Text = "Employeur";
             this.Load += new System.EventHandler(this.ClientList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

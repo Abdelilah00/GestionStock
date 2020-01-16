@@ -39,7 +39,7 @@
             this.btn_add.Name = "btn_add";
             this.btn_add.Size = new System.Drawing.Size(75, 23);
             this.btn_add.TabIndex = 3;
-            this.btn_add.Text = "Add";
+            this.btn_add.Text = "Ajouter\r\n";
             this.btn_add.UseVisualStyleBackColor = true;
             this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
@@ -59,7 +59,7 @@
             this.Controls.Add(this.btn_add);
             this.Controls.Add(this.dataGridView1);
             this.Name = "FactureList";
-            this.Text = "Facture";
+            this.Text = "Gestion De Demande";
             this.Load += new System.EventHandler(this.FactureList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
